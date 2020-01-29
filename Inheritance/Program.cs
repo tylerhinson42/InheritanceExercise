@@ -29,11 +29,33 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            var Cardinal = new Birds();
+            Cardinal.CantFly = false;
+            Cardinal.Migratory = false;
+            Cardinal.IsEdible = true;
+            Cardinal.Passerene = true;
+
+            Console.WriteLine(Cardinal.Legs);
+
+            string chordata = null;
+            Cardinal.Phylum = chordata; 
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Bird class
              *  
              * Creatively display the class member values 
              */
+
+            var Copperhead = new Reptiles();
+            
+            Copperhead.LaysEggs = true;
+
+            Animal Rattlesnake = new Reptiles();
+            Rattlesnake.IsPoisonous = true;
+
+            Console.WriteLine(Copperhead.Legs);
+
+            Console.WriteLine($"A bird has {Cardinal.Legs} legs." + $"And it is {Copperhead.IsPoisonous} that is poisonous");
         }
     }
 }
